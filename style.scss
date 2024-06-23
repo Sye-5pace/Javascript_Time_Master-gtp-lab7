@@ -1,14 +1,35 @@
 body {
     font-family: sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: #f5f5f5;
-  }
+}
   
-  #clock {
-    font-size: 72px;
+#clock {
+    font-size: 5rem;
     text-align: center;
     color: #333;
-  }
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  
+select,
+input[type="color"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 23px;
+}
+
+input {
+    border: 2px solid #333;
+    width: 4rem;
+}
+

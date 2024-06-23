@@ -8,7 +8,17 @@
     <title>Javascript Time Master</title>
   </head>
   <body>
-    <div id="clock"></div>
+    <section id="clock"></section>
+    <section id="controls">
+      <select id="format">
+        <option value="24">24-Hour Format</option>
+        <option value="12">12-Hour Format</option>
+      </select>
+      <select id="timezone">
+        <option value="UTC">UTC</option>
+      </select>
+      <input type="color" id="color-picker">
+    </section>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
