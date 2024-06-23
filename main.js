@@ -10,3 +10,17 @@ const getCurrentTime =()=> {
 }
 
 getCurrentTime();
+
+// Challenge #2
+// Task: Clock object constructor (using new Date() directly)
+const Clock = () => {
+  const now = new Date();
+  this.hours = now.getHours();
+  this.minutes = now.getMinutes();
+  this.seconds = now.getSeconds();
+}
+
+// Create a new Clock object instance with the current time
+//  and access to its properties
+const clock = new Clock();
+console.log(`Current time: ${clock.hours}:${clock.minutes}:${clock.seconds}`);
