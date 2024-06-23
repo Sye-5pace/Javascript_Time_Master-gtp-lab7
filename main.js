@@ -26,6 +26,7 @@ const clock = new Clock();
 console.log(`Task 2,Current time: ${clock.hours}:${clock.minutes}:${clock.seconds}`);
 
 
+
 //Challenge #3: Time formatting
 // Task: Add method to the clock object for formatting time:
 // getFormattedTime(),get12HourTime
@@ -53,3 +54,14 @@ console.log(`Task 3,Formatted time (24-hour): ${twentyFourTime}`)
 // Get formatted time in 12-hour format
 const twelveHourTime = clock.get12HourTime();
 console.log(`Task 3, Formatted time (12-hour): ${twelveHourTime}`);
+
+
+//Challenge #4: Display the clock on webpage
+const clockDisplay = () => {
+  const clock = new Clock();
+  const formattedTime = clock.getFormattedTime();
+  const clockElement = document.getElementById('clock');
+  clockElement.textContent = formattedTime;
+}
+
+setInterval(clockDisplay, 1000)
